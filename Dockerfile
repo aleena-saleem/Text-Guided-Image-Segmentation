@@ -32,3 +32,7 @@ COPY colors.txt /workspace/
 
 # Set the working directory to /workspace
 WORKDIR /workspace
+
+
+EXPOSE 8501
+CMD ["streamlit", "run", "app.py", "--server.address=0.0.0.0"]
