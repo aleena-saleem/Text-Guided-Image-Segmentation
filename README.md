@@ -40,23 +40,14 @@ Traditional segmentation systems often require predefined classes or manual user
 
 The project includes a **Streamlit dashboard** for interactive segmentation.
 
-Users can:
-
-1. Upload an image
-2. Enter a natural-language prompt
-3. Run segmentation
-4. View the original image and segmented result
-5. Inspect CLIPSeg heatmaps
-6. View individual masks
-7. Download the final segmentation
 
 ### Dashboard
 
-<p align="center"> <img src="saved_figures/Dashboard.png" alt="Dashboard" width="900"/> </p>
+<p align="center"> <img src="./saved_figures/Dashboard.png" alt="Dashboard" width="900"/> </p>
 
-<p align="center"> <img src="saved_figures/2..png" alt="Dashboard View 2" width="900"/> </p>
+<p align="center"> <img src="./saved_figures/2..png" alt="Dashboard View 2" width="900"/> </p>
 
-<p align="center"> <img src="saved_figures/3..png" alt="Dashboard View 3" width="900"/> </p>
+<p align="center"> <img src="./saved_figures/3..png" alt="Dashboard View 3" width="900"/> </p>
 
 ---
 
@@ -66,15 +57,15 @@ The system was tested on different types of images and objects, including animal
 
 
 <p align="center">
-  <img src="saved_figures/dog.png" alt="Dog Segmentation" width="700"/>
+  <img src="./saved_figures/dog.png" alt="Dog Segmentation" width="700"/>
 </p>
 
 <p align="center">
-  <img src="saved_figures/padel.png" alt="Paddle Player Segmentation" width="700"/>
+  <img src="./saved_figures/padel.png" alt="Paddle Player Segmentation" width="700"/>
 </p>
 
 <p align="center">
-  <img src="saved_figures/people.png" alt="People Segmentation" width="700"/>
+  <img src="./saved_figures/people.png" alt="People Segmentation" width="700"/>
 </p>
 
 ### Additional Results
