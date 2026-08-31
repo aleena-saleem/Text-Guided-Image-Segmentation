@@ -43,7 +43,7 @@ The project includes a **Streamlit dashboard** for interactive segmentation.
 
 ### Dashboard
 
-<p align="center"> <img src="./saved_figures/Dashboard.png" alt="Dashboard" width="900"/> </p>
+<p align="center"> <img src="./saved_figures/dashboard.png" alt="Dashboard" width="900"/> </p>
 
 <p align="center"> <img src="./saved_figures/2..png" alt="Dashboard View 2" width="900"/> </p>
 
@@ -57,30 +57,17 @@ The system was tested on different types of images and objects, including animal
 
 
 <p align="center">
-  <img src="./saved_figures/dog.png" alt="Dog Segmentation" width="700"/>
+  <img src="./saved_figures/output_dog_dog.png" alt="Dog Segmentation" width="700"/>
 </p>
 
 <p align="center">
-  <img src="./saved_figures/padel.png" alt="Paddle Player Segmentation" width="700"/>
+  <img src="./saved_figures/output_girl_padel playing.png" alt="Paddle Player Segmentation" width="700"/>
 </p>
 
 <p align="center">
-  <img src="./saved_figures/people.png" alt="People Segmentation" width="700"/>
+  <img src="./saved_figures/output_people_road crossing.png" alt="People Segmentation" width="700"/>
 </p>
 
-### Additional Results
-
-<p align="center">
-  <img src="saved_figures/output_bear_000000000285.png" alt="Bear Segmentation" width="300"/>
-  <img src="saved_figures/output_bicycle_000000224051.png" alt="Bicycle Segmentation" width="300"/>
-  <img src="saved_figures/output_giraffe_000000577862.png" alt="Giraffe Segmentation" width="300"/>
-</p>
-
-<p align="center">
-  <img src="saved_figures/output_cows_000000235857.png" alt="Cows Segmentation" width="300"/>
-  <img src="saved_figures/output_signpost_000000191471.png" alt="Signpost Segmentation" width="300"/>
-  <img src="saved_figures/output_zebra_000000364166.png" alt="Zebra Segmentation" width="300"/>
-</p>
 
 
 ---
@@ -90,14 +77,14 @@ The system was tested on different types of images and objects, including animal
 ```text
 Text-Guided-Image-Segmentation/
 │
-├── app.py                  # Streamlit dashboard
-├── infer.py                # Main segmentation pipeline
-├── process_dir.sh          # Batch image processing
-├── colors.txt              # Mask visualization colors
-├── requirements.txt        # Python dependencies
-├── Dockerfile              # Container configuration
+├── app.py                  -Streamlit dashboard
+├── infer.py                -Main segmentation pipeline
+├── process_dir.sh          -Batch image processing
+├── colors.txt              -Mask visualization colors
+├── requirements.txt        -Python dependencies
+├── Dockerfile              -Container configuration
 │
-└── saved_figures/          # Example segmentation results
+└── saved_figures/          -Example segmentation results
 ```
 
 ---
@@ -162,32 +149,10 @@ docker run --rm \
   --save_dir /workspace/output \
   --prompts "dog, person"
 ```
-
----
-
-## Key Contribution
-
-The project demonstrates a practical **text-to-segmentation pipeline** by combining the semantic understanding of CLIPSeg with the high-quality mask generation capabilities of SAM2.
-
-Instead of requiring predefined segmentation classes or manually selected regions, the system allows the target object to be specified directly through **natural-language prompts**.
-
----
-
-## References
-
-* **CLIPSeg** — Text and image conditioned image segmentation
-  https://github.com/timojl/clipseg
-
-* **SAM2** — Segment Anything Model 2
-  https://github.com/facebookresearch/sam2
-
-* **Hugging Face Transformers**
-  https://huggingface.co/docs/transformers
-
 ---
 
 ## Author
 
 **Aleena Saleem**
 
-Artificial Intelligence
+
